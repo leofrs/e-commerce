@@ -16,7 +16,7 @@ const Products = () => {
           return (
             <div
               key={id}
-              className="border border-1 border-gray-200 rounded-md hover:border-purple-600 transition-colors bg-white"
+              className="border border-1 border-gray-200 rounded-md hover:border-emerald-600 transition-colors bg-white"
             >
               <img
                 src={image}
@@ -28,11 +28,8 @@ const Products = () => {
                 <p>Descrição: {description}</p>
                 <h5 className="font-bold">R$: {price}</h5>
               </div>
-              <div className="flex justify-between py-3 px-4">
-                <button className="w-10 h-10 rounded-full border border-1 border-purple-600 flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white active:bg-purple-800 transition-colors">
-                  Ola
-                </button>
-                <button className="btn-primary border border-1 border-purple-600 p-2 hover:bg-purple-600 hover:text-white active:bg-purple-800 transition-colors">
+              <div className="flex justify-end py-3 px-4">
+                <button className="btn-primary border border-1 border-emerald-700 rounded shadow-md hover:bg-emerald-700 p-2  hover:text-white  transition-colors">
                   Comprar
                 </button>
               </div>

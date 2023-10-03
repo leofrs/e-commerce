@@ -1,6 +1,13 @@
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
 const NavbarMobile = () => {
   return (
-    <div className="block fixed z-10 top-0 left-0 bottom-0 height h-full w-[220px] transition-all bg-slate-900 lg:hidden">
+    <div className="block fixed z-100 top-[100px] right-0 bottom-0 height h-full w-[220px] transition-all bg-slate-50 xl:hidden">
       <ul>
         <li>
           <a
@@ -35,6 +42,23 @@ const NavbarMobile = () => {
           </a>
         </li>
       </ul>
+
+      <div className="mt-5">
+        <ul className="flex gap-3 justify-center ">
+          <li className="cursor-pointer">
+            <FaLinkedinIn />
+          </li>
+          <li className="cursor-pointer">
+            <FaFacebookF />
+          </li>
+          <li className="cursor-pointer">
+            <FaTwitter />
+          </li>
+          <li className="cursor-pointer">
+            <FaInstagram />
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
