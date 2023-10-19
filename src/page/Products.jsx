@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { loja } from "../data/store";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../features/carSlice";
 
 const Products = () => {
   const [data, setData] = useState([{}]);
-
+  const dispatch = useDispatch();
   useEffect(() => {
     setData(loja);
     console.log(loja);
@@ -29,7 +31,20 @@ const Products = () => {
                 <h5 className="font-bold">R$: {price}</h5>
               </div>
               <div className="flex justify-end py-3 px-4">
-                <button className="btn-primary border border-1 border-emerald-700 rounded shadow-md hover:bg-emerald-700 p-2  hover:text-white  transition-colors">
+                <button
+                  onClick={() =>
+                    dispatch(
+                      addToCart({
+                        id: id,
+                        image: image,
+                        title: title,
+                        quantidade: 1,
+                        price: price,
+                      })
+                    )
+                  }
+                  className="btn-primary border border-1 border-emerald-700 rounded shadow-md hover:bg-emerald-700 p-2  hover:text-white  transition-colors"
+                >
                   Comprar
                 </button>
               </div>
