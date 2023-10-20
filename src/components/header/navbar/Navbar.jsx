@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
-import logo from "../../../images/logo.png";
+import logo from "../../../assets/images/logo.png";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -19,8 +19,7 @@ const Navbar = () => {
     <nav className="w-full h-auto flex justify-center items-center font-normal ">
       <div className="w-[90%] h-auto flex justify-between items-center border-b border-gray-200">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="block  pl-5" />
-          <h1 className="text-lg pl-2 cursor-default">Loŕem</h1>
+          <img src={logo} alt="Logo" className="block w-[100px] pl-5" />
         </div>
         <div className="max-xl:hidden">
           <ul className="flex">
@@ -51,7 +50,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="register"
-                className="inline-flex items-center text-white bg-emerald-600 py-2 px-3 rounded shadow-md hover:bg-emerald-700 active:bg-emerald-800 transition-colors mx-5"
+                className="inline-flex items-center text-white bg-blue-700 py-2 px-3 rounded shadow-md hover:bg-blue-900 active:bg-blue-800 transition-colors mx-5"
               >
                 Registre-se
               </Link>

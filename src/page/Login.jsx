@@ -51,7 +51,7 @@ const Login = () => {
             Esqueceu seu Email ou senha?
           </a>
         </div>
-        <button className="btn-primary p-2 bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 w-full">
+        <button className="btn-primary p-2 bg-blue-800  hover:bg-blue-900 active:bg-blue-800 w-full">
           Login
         </button>
       </form>

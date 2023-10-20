@@ -46,7 +46,7 @@ const Register = () => {
             className="border p-2 border-gray-900 focus:border-emerald-600 focus:outline-none focus:ring-emerald-600 rounded-md w-full"
           />
         </div>
-        <button className="btn-primary p-2 bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 w-full">
+        <button className="btn-primary p-2 bg-blue-700 hover:bg-blue-900 active:bg-blue-700 w-full">
           Registrar
         </button>
       </form>
